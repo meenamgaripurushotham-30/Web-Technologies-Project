@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            font-size: 40px;
+            color: white;
+            padding-top: 20px;
+        }
+        div{
+            background-color: black;
+            border-radius : 20px 0 20px 0;
+            width: 600px;
+            margin-left: 300px;
+            margin-top: 100px;
+            
+        }
+        #b1{
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color:darkmagenta;
+            color: white;
+            margin-left: 150px;
+        }
+        #b2{
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color:rgb(136, 237, 34);
+            color:deeppink;
+            margin-left: 20px;
+        }
+        #b3{
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: aqua;
+            margin-left: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p id="a" align="center">Well come My Profile</p>
+        <button id="b1"onclick="change()" onmouseover="in1()" onmouseout="out1()">Click Here</button>
+        <button id="b2" onmouseover="in2()" onmouseout="out2()">Click Here</button>
+        <button id="b3" onmouseover="in3()" onmouseout="out3()">Click Here</button>
+    </div>
+    <script>
+        let sample=document.getElementById('a')
+        function change(){
+            sample.textContent='This purushotham..'
+            sample.style.color='darkmagenta'
+        }
+        let sum=document.getElementById('b2')
+        sum.onclick=function(){
+            sample.textContent='Iam a Python Developer..'
+            sample.style.color='deeppink'
+        }
+        let x=document.getElementById('b3')
+        x.onclick=function(){
+            sample.textContent='Seeking For Jobs'
+            sample.style.color='aqua'
+        }
+        function in1(){
+            document.getElementById('b1').style.transform='scale(1.1)';
+        }
+        function out1(){
+            document.getElementById('b1').style.transform='scale(1)'
+        }
+        function in2(){
+            document.getElementById('b2').style.transform='scale(1.1)'
+        }
+        function out2(){
+            document.getElementById('b2').style.transform='scale(1)'
+        }
+        function in3(){
+            document.getElementById('b3').style.transform='scale(1.1)'
+        }
+        function out3(){
+            document.getElementById('b3').style.transform='scale(1)'
+        }
+    </script>
+</body>
+</html>
