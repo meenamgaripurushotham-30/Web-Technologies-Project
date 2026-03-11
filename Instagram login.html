@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+        }
+        fieldset{
+            width: 350px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1{
+            font-size: 40px;
+            font-family: 'Brush Scrpt MT', cursive;
+        }
+        input{
+           width: 100%;
+           padding: 10px;
+           margin: 8px 0;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           
+        }
+        #a1{
+           display: block;
+           text-align: right;
+           font-size: 12px;
+           margin-top: 5px;
+           color: #0095f6;
+           text-decoration: none;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #0077cc;
+        }
+        .or{
+            margin: 15px 0;
+            color: gray;
+        }
+        #a2{
+            text-decoration: none;
+            color:#385185;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <h1>Instagram</h1>
+            <input type="text" placeholder="Phone number, username or email address"><br>
+            <input type="password"  placeholder="Password"><br>
+            <a href="" id="a1"><b>Forgotten password?</b></a><br>
+            <button type="submit">Log In</button>
+            <div class="or">OR</div>
+            <a href="#" id="a2" >Log in with Facebook</a>
+        </fieldset>
+    </div>
+</body>
+</html>
